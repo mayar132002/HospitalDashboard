@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Hospital_Services_GiudDBModelStoreContainer" CdmEntityContainer="Hospital_Services_GiudDBEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Admin_Name" ColumnName="Admin_Name" />
+          <ScalarProperty Name="Admin_Password" ColumnName="Admin_Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Care_Units">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Care_Units">
+        <MappingFragment StoreEntitySet="Care_Units">
+          <ScalarProperty Name="Care_ID" ColumnName="Care_ID" />
+          <ScalarProperty Name="Care_Name" ColumnName="Care_Name" />
+          <ScalarProperty Name="Care_NumberOfemptybed" ColumnName="Care_NumberOfemptybed" />
+          <ScalarProperty Name="Care_NumberOfbed" ColumnName="Care_NumberOfbed" />
+          <ScalarProperty Name="Care_Info" ColumnName="Care_Info" />
+          <ScalarProperty Name="Care_Description" ColumnName="Care_Description" />
+          <ScalarProperty Name="Care_Numberofemployees" ColumnName="Care_Numberofemployees" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="dept_ID" ColumnName="dept_ID" />
+          <ScalarProperty Name="dept_Name" ColumnName="dept_Name" />
+          <ScalarProperty Name="dept_NumberOfemptybed" ColumnName="dept_NumberOfemptybed" />
+          <ScalarProperty Name="dept_NumberOfBed" ColumnName="dept_NumberOfBed" />
+          <ScalarProperty Name="dept_Info" ColumnName="dept_Info" />
+          <ScalarProperty Name="dept_Descripation" ColumnName="dept_Descripation" />
+          <ScalarProperty Name="dept_NumberOfEmp" ColumnName="dept_NumberOfEmp" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="Role_Name" ColumnName="Role_Name" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articals">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Artical">
+        <MappingFragment StoreEntitySet="Articals">
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Artical_Content" ColumnName="Artical_Content" />
+          <ScalarProperty Name="Artical_Image" ColumnName="Artical_Image" />
+          <ScalarProperty Name="Artical_Date" ColumnName="Artical_Date" />
+          <ScalarProperty Name="Artical_Subtitle" ColumnName="Artical_Subtitle" />
+          <ScalarProperty Name="Artical_title" ColumnName="Artical_title" />
+          <ScalarProperty Name="Artical_ID" ColumnName="Artical_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newsses">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Newss">
+        <MappingFragment StoreEntitySet="Newss">
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="News_Date" ColumnName="News_Date" />
+          <ScalarProperty Name="News_Image" ColumnName="News_Image" />
+          <ScalarProperty Name="News_Content" ColumnName="News_Content" />
+          <ScalarProperty Name="News_ID" ColumnName="News_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patients">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.patient">
+        <MappingFragment StoreEntitySet="patient">
+          <ScalarProperty Name="Care_ID" ColumnName="Care_ID" />
+          <ScalarProperty Name="dept_ID" ColumnName="dept_ID" />
+          <ScalarProperty Name="Admin_ID" ColumnName="Admin_ID" />
+          <ScalarProperty Name="Patient_Address" ColumnName="Patient_Address" />
+          <ScalarProperty Name="Patient_NationalID" ColumnName="Patient_NationalID" />
+          <ScalarProperty Name="Patient_Gender" ColumnName="Patient_Gender" />
+          <ScalarProperty Name="Patient_PhoneNumber" ColumnName="Patient_PhoneNumber" />
+          <ScalarProperty Name="Patient_DateOfBirth" ColumnName="Patient_DateOfBirth" />
+          <ScalarProperty Name="Patient_Name" ColumnName="Patient_Name" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bloods">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.Blood">
+        <MappingFragment StoreEntitySet="Blood">
+          <ScalarProperty Name="Blood1" ColumnName="Blood" />
+          <ScalarProperty Name="Blood_ID" ColumnName="Blood_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BloodNeeds">
+      <EntityTypeMapping TypeName="Hospital_Services_GiudDBModel.BloodNeed">
+        <MappingFragment StoreEntitySet="BloodNeed">
+          <ScalarProperty Name="Blood_ID" ColumnName="Blood_ID" />
+          <ScalarProperty Name="IsNeeded" ColumnName="IsNeeded" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
